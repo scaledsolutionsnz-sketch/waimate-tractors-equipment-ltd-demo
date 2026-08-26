@@ -9,12 +9,12 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141A17'/%3E%3Cpath d='M9 21a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z' fill='%23F2A007'/%3E%3Cpath d='M7 12h8l3 4' stroke='%23F2A007' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#141A17;--ink-3:#26312C;--accent:#F2A007;--accent-2:#FFC24D;--on-accent:#14180F}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:#fff;min-height:100svh;display:flex;flex-direction:column;line-height:1.7;-webkit-font-smoothing:antialiased}
+body{font-family:'Barlow',system-ui,sans-serif;background:var(--ink);color:#fff;min-height:100svh;display:flex;flex-direction:column;line-height:1.7;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .page-bg{position:fixed;inset:0;z-index:0;background:url('https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=1600&q=70') center/cover;opacity:.12}
@@ -24,7 +24,7 @@ nav{position:relative;z-index:10;display:flex;align-items:center;justify-content
 .nb-mark{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:var(--on-accent)}
 .nb-mark svg{width:21px;height:21px}
 .nb-txt{font-family:'Outfit';font-weight:800;font-size:16.5px;line-height:1.05}
-.nb-txt small{display:block;font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:2px;font-family:'Inter'}
+.nb-txt small{display:block;font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:2px;font-family:'Barlow'}
 .back{display:inline-flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);transition:color .2s}
 .back:hover{color:var(--accent-2)}
 .back svg{width:15px;height:15px}
@@ -43,7 +43,7 @@ label{display:block;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-tr
 input,select,textarea{
   width:100%;padding:.9rem 1rem;border-radius:12px;
   background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);
-  color:#fff;font-family:'Inter';font-size:1rem;transition:border-color .2s,background .2s;
+  color:#fff;font-family:'Barlow';font-size:1rem;transition:border-color .2s,background .2s;
 }
 input::placeholder,textarea::placeholder{color:rgba(255,255,255,.32)}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);background:rgba(255,255,255,.09)}
@@ -54,7 +54,7 @@ textarea{resize:vertical;min-height:130px}
 .submit{
   width:100%;min-height:56px;margin-top:.4rem;border:0;border-radius:999px;
   background:var(--accent);color:var(--on-accent);
-  font-family:'Inter';font-weight:700;font-size:1rem;cursor:pointer;
+  font-family:'Barlow';font-weight:700;font-size:1rem;cursor:pointer;
   transition:background .25s,transform .2s;
 }
 .submit:hover{background:var(--accent-2);transform:translateY(-2px)}
