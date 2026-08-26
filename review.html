@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leave a Review | Waimate Tractors &amp; Equipment Ltd</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#141A17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141A17'/%3E%3Cpath d='M9 21a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z' fill='%23F2A007'/%3E%3Cpath d='M7 12h8l3 4' stroke='%23F2A007' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#141A17;--ink-3:#26312C;--accent:#F2A007;--accent-2:#FFC24D;--on-accent:#14180F}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--ink);color:#fff;min-height:100svh;display:flex;flex-direction:column;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.page-bg{position:fixed;inset:0;z-index:0;background:url('https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=1600&q=70') center/cover;opacity:.14}
+.page-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(242,160,7,.14),transparent 62%)}
+
+nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:1.3rem clamp(20px,5vw,3rem);border-bottom:1px solid rgba(255,255,255,.08)}
+.nb{display:flex;align-items:center;gap:11px}
+.nb-mark{width:36px;height:36px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:var(--on-accent)}
+.nb-mark svg{width:21px;height:21px}
+.nb-txt{font-family:'Outfit';font-weight:800;font-size:16.5px;line-height:1.05}
+.nb-txt small{display:block;font-weight:500;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:2px;font-family:'Inter'}
+.back{display:inline-flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);transition:color .2s}
+.back:hover{color:var(--accent-2)}
+.back svg{width:15px;height:15px;transition:transform .2s}
+.back:hover svg{transform:translateX(-3px)}
+
+main{position:relative;z-index:5;flex:1;display:flex;align-items:center;justify-content:center;padding:clamp(2rem,6vw,4rem) 1.25rem}
+.card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:clamp(2rem,5vw,3rem) clamp(1.4rem,4vw,2.6rem);max-width:540px;width:100%;text-align:center;backdrop-filter:blur(14px);box-shadow:0 34px 84px rgba(0,0,0,.55)}
+.badge{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);background:rgba(242,160,7,.14);border:1px solid rgba(242,160,7,.32);padding:.4rem .85rem;border-radius:999px;margin-bottom:1.2rem}
+h1{font-family:'Outfit';font-weight:800;font-size:clamp(1.9rem,5.4vw,2.7rem);line-height:1.06;letter-spacing:-.02em}
+.sub{color:rgba(255,255,255,.72);font-size:1rem;margin-top:.9rem}
+
+.stars{display:flex;justify-content:center;gap:.35rem;margin:2rem 0 .6rem}
+.star{background:none;border:0;cursor:pointer;font-size:clamp(2.1rem,8vw,2.9rem);line-height:1;color:rgba(255,255,255,.22);transition:color .18s ease,transform .18s ease;padding:.15rem}
+.star:hover,.star.hov,.star.sel{color:var(--accent)}
+.star:hover{transform:scale(1.14)}
+.label{min-height:1.6rem;color:rgba(255,255,255,.55);font-size:.95rem;transition:color .2s}
+.label.on{color:var(--accent-2)}
+
+.go{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;width:100%;margin-top:1.6rem;min-height:56px;padding:1rem 1.6rem;border:0;border-radius:999px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.42);font-family:'Inter';font-weight:700;font-size:1rem;cursor:not-allowed;transition:background .25s,color .25s,transform .2s}
+.go.ready{background:var(--accent);color:var(--on-accent);cursor:pointer}
+.go.ready:hover{background:var(--accent-2);transform:translateY(-2px)}
+.or{display:flex;align-items:center;gap:1rem;margin:1.5rem 0 1.1rem;color:rgba(255,255,255,.32);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase}
+.or::before,.or::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.14)}
+.alt{font-size:.9rem;color:rgba(255,255,255,.6);transition:color .2s}
+.alt:hover{color:var(--accent-2)}
+
+footer{position:relative;z-index:5;text-align:center;padding:1.6rem 1rem 2rem;font-size:.8rem;color:rgba(255,255,255,.34)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page-bg" aria-hidden="true"></div>
+
+<nav>
+  <a class="nb" href="index.html" aria-label="Waimate Tractors and Equipment home">
+    <span class="nb-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="16" r="4.4"/><circle cx="18" cy="17" r="2.9"/><path d="M4.6 11.6h6.2l2.6 3.6"/><path d="M10.8 11.6V8h4.4l1.5 5"/></svg></span>
+    <span class="nb-txt">Waimate Tractors<small>&amp; Equipment Ltd</small></span>
+  </a>
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back to site
+  </a>
+</nav>
+
+<main>
+  <div class="card">
+    <span class="badge">Your feedback</span>
+    <h1>How did we do?</h1>
+    <p class="sub">Pick a rating for the work we did on your gear. It takes about ten seconds.</p>
+
+    <div class="stars" id="stars" role="group" aria-label="Star rating">
+      <button class="star" data-v="1" aria-label="1 star">&#9733;</button>
+      <button class="star" data-v="2" aria-label="2 stars">&#9733;</button>
+      <button class="star" data-v="3" aria-label="3 stars">&#9733;</button>
+      <button class="star" data-v="4" aria-label="4 stars">&#9733;</button>
+      <button class="star" data-v="5" aria-label="5 stars">&#9733;</button>
+    </div>
+
+    <div class="label" id="label">Pick a rating above</div>
+
+    <button class="go" id="go" disabled>Continue</button>
+
+    <div class="or">or</div>
+    <a class="alt" href="private.html">Send private feedback instead</a>
+  </div>
+</main>
+
+<footer>&copy; <span id="yr">2026</span> Waimate Tractors &amp; Equipment Ltd &middot; Waimate, South Canterbury</footer>
+
+<script>
+var GOOGLE_REVIEW_URL='https://www.google.com/maps/search/?api=1&query=Waimate%20Tractors%20%26%20Equipment%20Ltd%2C%209%20Minnie%20Street%2C%20Waimate';
+
+var labels={
+  1:'Sorry to hear that. Tell us what went wrong.',
+  2:'Not good enough. We would like to hear more.',
+  3:'Thanks. Tell us what we could have done better.',
+  4:'Good to hear. Mind putting that on Google?',
+  5:'Great. A quick Google review really helps us.'
+};
+var stars=document.querySelectorAll('.star');
+var label=document.getElementById('label');
+var go=document.getElementById('go');
+var picked=0;
+
+stars.forEach(function(s){
+  s.addEventListener('mouseenter',function(){
+    var v=+s.dataset.v;
+    stars.forEach(function(x){x.classList.toggle('hov',+x.dataset.v<=v)});
+    label.textContent=labels[v];label.classList.add('on');
+  });
+  s.addEventListener('mouseleave',function(){
+    stars.forEach(function(x){x.classList.remove('hov')});
+    label.textContent=picked?labels[picked]:'Pick a rating above';
+    label.classList.toggle('on',!!picked);
+  });
+  s.addEventListener('click',function(){
+    picked=+s.dataset.v;
+    stars.forEach(function(x){x.classList.toggle('sel',+x.dataset.v<=picked)});
+    label.textContent=labels[picked];label.classList.add('on');
+    go.classList.add('ready');go.disabled=false;
+    go.textContent=picked>=4?'Leave a Google review':'Tell us what happened';
+  });
+});
+
+go.addEventListener('click',function(){
+  if(!picked)return;
+  if(picked>=4){window.open(GOOGLE_REVIEW_URL,'_blank','noopener');}
+  else{window.location.href='private.html?rating='+picked;}
+});
+
+document.getElementById('yr').textContent=(new Date()).getFullYear();
+</script>
+</body>
+</html>
